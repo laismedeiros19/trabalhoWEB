@@ -1,0 +1,83 @@
+<main class="main-content">
+  <header>
+    <h1>👩‍🏫 Cadastro de Professores</h1>
+    <p>Gerencie as informações e acessos dos professores da escola.</p>
+    <link rel="stylesheet" href="professores.css">
+  </header>
+
+  <!-- FORMULÁRIO DE CADASTRO -->
+  <section class="form-section">
+    <form id="formProfessor" enctype="multipart/form-data">
+      <div class="form-grid">
+        <div>
+          <label>Nome Completo</label>
+          <input type="text" id="nomeProfessor" required>
+        </div>
+        <div>
+          <label>Data de Nascimento</label>
+          <input type="date" id="dataNascimento" required>
+        </div>
+        <div>
+          <label>CPF</label>
+          <input type="text" id="cpfProfessor" placeholder="000.000.000-00" required>
+        </div>
+        <div>
+          <label>E-mail Institucional</label>
+          <input type="email" id="emailProfessor" placeholder="nome@escola.com.br" required>
+        </div>
+        <div>
+          <label>Telefone</label>
+          <input type="tel" id="telefoneProfessor" placeholder="(00) 00000-0000">
+        </div>
+        <div>
+          <label>Matéria</label>
+          <input type="text" id="materia" placeholder="Ex: Matemática, História" required>
+        </div>
+        <div>
+          <label>Upload de Foto</label>
+          <input type="file" id="fotoProfessor" accept="image/*">
+        </div>
+      </div>
+
+      <div class="form-grid">
+        <div>
+          <label>Senha de Acesso</label>
+          <input type="password" id="senhaProfessor" required>
+        </div>
+        <div>
+          <label>Confirmar Senha</label>
+          <input type="password" id="confirmaSenha" required>
+        </div>
+      </div>
+
+      <div class="form-actions">
+        <button type="submit" class="btn">Cadastrar Professor</button>
+      </div>
+    </form>
+  </section>
+
+  <!-- LISTA DE PROFESSORES -->
+  <section class="tabela-section">
+    <div class="tabela-header">
+      <h2>📋 Professores Cadastrados</h2>
+      <input type="text" id="buscaProfessor" placeholder="Pesquisar por nome ou matéria...">
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Foto</th>
+          <th>Nome</th>
+          <th>Matéria</th>
+          <th>E-mail</th>
+          <th>Telefone</th>
+          <th>ID</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody id="tabelaProfessores"></tbody>
+    </table>
+  </section>
+</main>
+
+<script src="professores.js"></script>

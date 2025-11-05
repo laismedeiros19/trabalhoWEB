@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cadastrar Escola | Saber+</title>
+  <link rel="stylesheet" href="escola.css">
+  <link rel="script" href="escola.js">
+</head>
+
+<body>
+  <header>
+    <a href="paginicial.html" class="logo">Saber<span>+</span></a>
+  </header>
+
+  <main>
+    <section class="form-box">
+      <h1>Cadastrar Escola</h1>
+      <p class="subtitle">Preencha os dados para criar o primeiro administrador</p>
+
+      <form id="cadastroForm">
+        <label for="nomeEscola">Nome da Escola</label>
+        <input type="text" id="nomeEscola" placeholder="Ex: Escola Estadual ABC" required>
+
+        <label for="cnpj">CNPJ</label>
+        <input type="text" id="cnpj" placeholder="00.000.000/0000-00" required>
+
+        <label for="emailCadastro">E-mail Institucional</label>
+        <input type="email" id="emailCadastro" placeholder="contato@escola.com.br" required>
+
+        <label for="telefone">Telefone</label>
+        <input type="tel" id="telefone" placeholder="(00) 00000-0000" required>
+
+        <label for="senhaCadastro">Crie uma Senha</label>
+        <input type="password" id="senhaCadastro" placeholder="••••••••" required>
+
+        <label for="confirmaSenha">Confirme a Senha</label>
+        <input type="password" id="confirmaSenha" placeholder="••••••••" required>
+
+        <button type="submit" class="btn">Cadastrar Escola</button>
+        <p class="form-link"><a href="login-admin.html">Já possui uma conta? Entrar</a></p>
+      </form>
+
+      <div id="cadastroMsg" class="msg"></div>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 Saber+ - Sistema de Gestão Escolar
+  </footer>
+
+  <script src="cadastro.js"></script>
+</body>
+</html>

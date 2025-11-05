@@ -1,0 +1,102 @@
+.main-content {
+  flex: 1;
+  padding: 40px;
+  font-family: "Poppins", sans-serif;
+  background: #f8faff;
+}
+
+/* Cabeçalho */
+header h1 {
+  color: #1e3a8a;
+  margin-bottom: 8px;
+}
+header p {
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* Formulário */
+.form-section {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+  margin-bottom: 35px;
+}
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+label {
+  font-weight: 600;
+  color: #333;
+}
+input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 100%;
+}
+.form-actions {
+  text-align: right;
+  margin-top: 20px;
+}
+.btn {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.btn:hover { background-color: #1e4ed8; }
+
+/* Tabela */
+.tabela-section {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+}
+.tabela-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+#buscaProfessor {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+th {
+  background-color: #2563eb;
+  color: white;
+  padding: 10px;
+}
+td {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+tr:hover { background-color: #f1f5ff; }
+.acao-btn {
+  background: none;
+  border: none;
+  color: #2563eb;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-right: 6px;
+}
+.foto-professor {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+}

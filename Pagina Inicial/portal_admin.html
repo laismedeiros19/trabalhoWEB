@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - Portal do Administrador | Saber+</title>
+  <link rel="stylesheet" href="portal_admin.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <!-- MENU LATERAL -->
+  <aside class="sidebar">
+    <div class="logo">Saber<span>+</span></div>
+    <nav>
+      <ul>
+        <li class="active"><a href="#"> Dashboard</a></li>
+        <li><a href="alunos.html">Alunos</a></li>
+        <li><a href="professores.html">Professores</a></li>
+        <li><a href="administradores.html">Administradores</a></li>
+        <li><a href="turmas.html">Turmas</a></li>
+        <li><a href="relatorios.html">Relatórios</a></li>
+        <li><a href="configuracoes.html">Configurações</a></li>
+        <li><a href="#" id="logout">Sair</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <!-- CONTEÚDO PRINCIPAL -->
+  <main class="main">
+    <header class="topbar">
+      <div>
+        <h1>Bem-vindo, <span id="adminNome">Administrador</span> </h1>
+        <p>Último login: <span id="ultimoLogin">27/10/2025 às 18:50</span></p>
+      </div>
+      <div class="perfil">
+        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Perfil">
+        <span>Admin</span>
+      </div>
+    </header>
+
+    <section class="cards">
+      <div class="card"><h3>Alunos</h3><p id="alunosQtd">312 cadastrados</p></div>
+      <div class="card"><h3>Professores</h3><p id="profQtd">15 cadastrados</p></div>
+      <div class="card"><h3>Turmas</h3><p id="turmasQtd">8 ativas</p></div>
+      <div class="card"><h3>Presença Média</h3><p id="presenca">96%</p></div>
+    </section>
+
+    <section class="graficos">
+      <div class="grafico-container">
+        <h2> Desempenho Geral dos Alunos</h2>
+        <canvas id="graficoDesempenho"></canvas>
+      </div>
+
+      <div class="grafico-container">
+        <h2> Acessos Recentes ao Sistema</h2>
+        <canvas id="graficoAcessos"></canvas>
+      </div>
+    </section>
+
+    <section class="historico">
+      <h2> Últimos Logins</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Usuário</th>
+            <th>Função</th>
+            <th>Data</th>
+            <th>Hora</th>
+          </tr>
+        </thead>
+        <tbody id="historicoTable">
+          <tr><td>Maria Souza</td><td>Admin</td><td>27/10/2025</td><td>18:42</td></tr>
+          <tr><td>João Costa</td><td>Admin</td><td>27/10/2025</td><td>18:37</td></tr>
+          <tr><td>Ana Lima</td><td>Admin</td><td>27/10/2025</td><td>18:35</td></tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <script src="portal_admin.js"></script>
+</body>
+</html>

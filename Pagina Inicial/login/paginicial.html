@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Saber+ | Sistema de Gestão Escolar</title>
+  <link rel="stylesheet" href="inicial.css" />
+</head>
+<body>
+  <!-- CABEÇALHO -->
+  <header>
+    <div class="logo">Saber<span>+</span></div>
+    <nav>
+      <ul>
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#recursos">Recursos</a></li>
+        <li><a href="#vantagens">Vantagens</a></li>
+        <li><a href="#contato">Contato</a></li>
+
+        <!-- ✅ Novo submenu de Portais -->
+        <li class="dropdown">
+          <a href="#" class="btn-login">Entrar</a>
+          <ul class="dropdown-menu">
+            <li><a href="login_aluno.html">Portal do Aluno</a></li>
+            <li><a href="login_professor.html">Portal do Professor</a></li>
+            <li><a href="login_adm.html">Portal do Administrador</a></li>
+          </ul>
+        </li>
+
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section id="inicio" class="hero">
+    <div class="hero-text">
+      <h1>O futuro da gestão escolar começa aqui</h1>
+      <p>
+        O <strong>Saber+</strong> é um sistema completo para escolas modernas:  
+        gerencie alunos, notas, turmas e professores com eficiência e tecnologia.
+      </p>
+      <div class="hero-buttons">
+        <a href="cadescola.html" class="btn">Cadastrar Escola</a>
+        <a href="#recursos" class="btn-secondary">Saiba Mais</a>
+      </div>
+    </div>
+    <div class="hero-img">
+      <img src="https://cdn-icons-png.flaticon.com/512/906/906175.png" alt="Dashboard do sistema">
+    </div>
+  </section>
+
+  <!-- RECURSOS -->
+  <section id="recursos" class="recursos">
+    <div class="container">
+      <h2>Principais Recursos</h2>
+      <p class="subtitulo">
+        Tudo que sua escola precisa em um único sistema.
+      </p>
+      <div class="cards">
+        <div class="card">
+          <img src="https://cdn-icons-png.flaticon.com/512/1828/1828961.png" alt="">
+          <h3>Lançamento de Notas</h3>
+          <p>Professores podem lançar e revisar notas de forma simples e rápida.</p>
+        </div>
+        <div class="card">
+          <img src="https://cdn-icons-png.flaticon.com/512/3135/3135755.png" alt="">
+          <h3>Gestão de Alunos</h3>
+          <p>Controle completo de matrículas, histórico escolar e frequência.</p>
+        </div>
+        <div class="card">
+          <img src="https://cdn-icons-png.flaticon.com/512/3106/3106909.png" alt="">
+          <h3>Comunicação</h3>
+          <p>Envio de comunicados e notificações para alunos e responsáveis.</p>
+        </div>
+        <div class="card">
+          <img src="https://cdn-icons-png.flaticon.com/512/1828/1828859.png" alt="">
+          <h3>Relatórios Inteligentes</h3>
+          <p>Visualize dados de desempenho e presença com gráficos e análises.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VANTAGENS -->
+  <section id="vantagens" class="vantagens">
+    <div class="container">
+      <h2>Por que escolher o Saber+</h2>
+      <div class="vantagens-grid">
+        <div class="vantagem">
+          <img src="https://cdn-icons-png.flaticon.com/512/4313/4313085.png" alt="">
+          <h3>100% Online</h3>
+          <p>Acesse de qualquer lugar, a qualquer hora, com total segurança.</p>
+        </div>
+        <div class="vantagem">
+          <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="">
+          <h3>Interface Intuitiva</h3>
+          <p>Layout moderno e fácil de usar, pensado para gestores e professores.</p>
+        </div>
+        <div class="vantagem">
+          <img src="https://cdn-icons-png.flaticon.com/512/992/992700.png" alt="">
+          <h3>Suporte Dedicado</h3>
+          <p>Equipe técnica pronta para ajudar sua escola a crescer.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section id="contato" class="contato">
+    <div class="container">
+      <h2>Entre em contato</h2>
+      <p>Solicite uma demonstração gratuita ou tire suas dúvidas com nossa equipe.</p>
+      <form>
+        <input type="text" placeholder="Nome da escola" required>
+        <input type="email" placeholder="E-mail" required>
+        <textarea rows="4" placeholder="Mensagem"></textarea>
+        <button type="submit" class="btn">Enviar Mensagem</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- RODAPÉ -->
+  <footer>
+    <p>© 2025 Saber+. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>

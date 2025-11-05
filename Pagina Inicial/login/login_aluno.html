@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | Portal do Aluno - Saber+</title>
+  <link rel="stylesheet" href="login_aluno.css">
+</head>
+<body>
+  <header>
+    <a href="paginicial.html" class="logo">Saber<span>+</span></a>
+  </header>
+
+  <main>
+    <section class="login-box">
+      <h1>Portal do Aluno</h1>
+      <p class="subtitle">Acesse com seu RA e senha</p>
+
+      <form id="loginAlunoForm">
+        <label for="raAluno">RA</label>
+        <input type="text" id="raAluno" placeholder="Ex: 20254001" required>
+
+        <label for="senhaAluno">Senha</label>
+        <input type="password" id="senhaAluno" placeholder="••••••••" required>
+
+        <button type="submit" class="btn">Entrar</button>
+
+        <p class="form-link">
+          <a href="paginicial.html">Voltar para página inicial</a>
+        </p>
+      </form>
+
+      <div id="loginMsg" class="msg"></div>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 Saber+ - Sistema de Gestão Escolar
+  </footer>
+
+  <script src="login-aluno.js"></script>
+</body>
+</html>

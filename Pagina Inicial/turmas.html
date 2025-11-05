@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Turmas | Saber+</title>
+  <link rel="stylesheet" href="turmas.css">
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="logo">Saber<span>+</span></div>
+    <nav>
+      <ul>
+        <li><a href="portal_admin.html">🏠 Dashboard</a></li>
+        <li><a href="alunos.html">🎓 Alunos</a></li>
+        <li><a href="professores.html">👩‍🏫 Professores</a></li>
+        <li class="active"><a href="#">🏫 Turmas</a></li>
+        <li><a href="relatorios.html">📊 Relatórios</a></li>
+        <li><a href="login-admin.html" id="logout">🚪 Sair</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <main class="main">
+    <header>
+      <h1>📚 Cadastro de Turmas</h1>
+      <p>Cadastre, edite e gerencie as turmas da sua escola.</p>
+    </header>
+
+    <section class="form-section">
+      <form id="formTurma">
+        <div class="input-group">
+          <label for="nomeTurma">Nome da Turma</label>
+          <input type="text" id="nomeTurma" placeholder="Ex: 1º Ano A" required>
+        </div>
+
+        <div class="input-group">
+          <label for="professorResponsavel">Professor Responsável</label>
+          <input type="text" id="professorResponsavel" placeholder="Ex: Maria Souza" required>
+        </div>
+
+        <div class="input-group">
+          <label for="anoLetivo">Ano Letivo</label>
+          <input type="number" id="anoLetivo" placeholder="2025" required>
+        </div>
+
+        <div class="input-group">
+          <label for="turno">Turno</label>
+          <select id="turno" required>
+            <option value="">Selecione</option>
+            <option value="Matutino">Matutino</option>
+            <option value="Vespertino">Vespertino</option>
+            <option value="Noturno">Noturno</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn">Cadastrar Turma</button>
+      </form>
+    </section>
+
+    <section class="lista-section">
+      <h2>📋 Turmas Cadastradas</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Turma</th>
+            <th>Professor</th>
+            <th>Ano</th>
+            <th>Turno</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+        <tbody id="tabelaTurmas"></tbody>
+      </table>
+    </section>
+  </main>
+
+  <script src="turmas.js"></script>
+</body>
+</html>

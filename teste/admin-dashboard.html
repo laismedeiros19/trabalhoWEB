@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel Administrativo</title>
+    <link rel="stylesheet" href="/home/lais/faculdade/3bimestre/Trabalho Web/Trabalho Front-end/teste/admin-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    
+    <div class="dashboard-container">
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <h3>Admin Panel</h3>
+            </div>
+
+            <ul class="menu-list">
+                <li class="active">
+                    <a href="#">
+                        <i class="fa-solid fa-border-all"></i>
+                        <span>Mural</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        <span>Grade Curricular</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-calendar-days"></i>
+                        <span>Quadro de Horários</span>
+                    </a>
+                </li>
+
+                <li class="menu-item">
+                    <div class="dropdown-toggle">
+                        <i class="fa-solid fa-desktop"></i>
+                        <span>Central do Aluno</span>
+                        <i class="fa-solid fa-chevron-right arrow"></i>
+                    </div>
+                    <ul class="submenu">
+                        <li><a href="#">Desempenho</a></li>
+                        <li><a href="#">Nota/falta unificada</a></li>
+                        <li><a href="#">Plano de Aula</a></li>
+                        <li><a href="#">Faltas</a></li>
+                    </ul>
+                </li>
+
+                <li class="menu-item">
+                    <div class="dropdown-toggle">
+                        <i class="fa-solid fa-building-columns"></i>
+                        <span>Secretaria</span>
+                        <i class="fa-solid fa-chevron-right arrow"></i>
+                    </div>
+                    <ul class="submenu">
+                        <li><a href="#">Requerimentos</a></li>
+                        <li><a href="#">Documentos</a></li>
+                    </ul>
+                </li>
+                
+                <li class="menu-item">
+                    <div class="dropdown-toggle">
+                        <i class="fa-solid fa-user-shield"></i>
+                        <span>Administração</span>
+                        <i class="fa-solid fa-chevron-right arrow"></i>
+                    </div>
+                    <ul class="submenu">
+                        <li><a href="#">Cadastrar Alunos</a></li>
+                        <li><a href="#">Cadastrar Professores</a></li>
+                        <li><a href="#">Relatórios</a></li>
+                        <li><a href="#">Gerenciar Usuários</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+        </nav>
+
+        <main class="main-content">
+            <header class="main-header">
+                <h2>Mural</h2>
+                <div class="user-info">
+                    <span>Lais Gabrielly Medeiros</span>
+                    <i class="fa-solid fa-user-circle"></i>
+                </div>
+            </header>
+
+            <div class="content">
+                
+                <div class="dashboard-cards">
+                    <div class="card">
+                        <div class="card-icon">
+                            <i class="fa-solid fa-user-graduate"></i>
+                        </div>
+                        <div class="card-info">
+                            <h4>Total de Alunos</h4>
+                            <span>1,250</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">
+                            <i class="fa-solid fa-chalkboard-user"></i>
+                        </div>
+                        <div class="card-info">
+                            <h4>Total de Professores</h4>
+                            <span>80</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">
+                            <i class="fa-solid fa-school"></i>
+                        </div>
+                        <div class="card-info">
+                            <h4>Total de Turmas</h4>
+                            <span>45</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">
+                            <i class="fa-solid fa-bell"></i>
+                        </div>
+                        <div class="card-info">
+                            <h4>Avisos</h4>
+                            <span>3</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dashboard-main-content">
+                    <div class="content-box">
+                        <h3>Avisos Recentes</h3>
+                        <ul>
+                            <li>Reunião de pais e mestres - 10/11/2025</li>
+                            <li>Início das provas semestrais - 15/11/2025</li>
+                            <li>Feriado da Proclamação da República - 15/11/2025</li>
+                            <li>Prazo final para entrega de documentos - 20/11/2025</li>
+                        </ul>
+                    </div>
+                    <div class="content-box">
+                        <h3>Calendário de Eventos</h3>
+                        <p>(Aqui você pode adicionar um plugin de calendário ou uma lista de eventos)</p>
+                        </div>
+                </div>
+
+            </div>
+        </main>
+    </div>
+
+    <script src="admin.js"></script>
+</body>
+</html>

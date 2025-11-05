@@ -1,0 +1,121 @@
+<main class="main-content">
+  <header>
+    <h1>Cadastro de Alunos</h1>
+    <p>Gerencie o registro completo dos alunos da escola.</p>
+    <link rel="stylesheet" href="alunos.css">
+  </header>
+
+  <!-- FORMULÁRIO DE CADASTRO -->
+  <section class="form-section">
+    <form id="formAluno" enctype="multipart/form-data">
+      <div class="tabs">
+        <button type="button" class="tab-btn active" data-tab="dados">Dados Pessoais</button>
+        <button type="button" class="tab-btn" data-tab="documentos">Documentos</button>
+        <button type="button" class="tab-btn" data-tab="endereco">Endereço</button>
+        <button type="button" class="tab-btn" data-tab="acesso">Acesso</button>
+      </div>
+
+      <!-- Aba Dados -->
+      <div class="tab-content active" id="dados">
+        <div class="form-grid">
+          <div>
+            <label>Nome Completo</label>
+            <input type="text" id="nomeAluno" required>
+          </div>
+          <div>
+            <label>Data de Nascimento</label>
+            <input type="date" id="dataNascimento" required>
+          </div>
+          <div>
+            <label>RA (Registro do Aluno)</label>
+            <input type="text" id="raAluno" required>
+          </div>
+          <div>
+            <label>Turma</label>
+            <input type="text" id="turmaAluno" required>
+          </div>
+          <div>
+            <label>Telefone</label>
+            <input type="tel" id="telefoneAluno" placeholder="(00) 00000-0000">
+          </div>
+          <div>
+            <label>E-mail</label>
+            <input type="email" id="emailAluno" required>
+          </div>
+        </div>
+      </div>
+
+      <!-- Aba Documentos -->
+      <div class="tab-content" id="documentos">
+        <div class="form-grid">
+          <div>
+            <label>CPF</label>
+            <input type="text" id="cpfAluno" placeholder="000.000.000-00" required>
+          </div>
+          <div>
+            <label>RG</label>
+            <input type="text" id="rgAluno" placeholder="00.000.000-0">
+          </div>
+          <div>
+            <label>Upload de RG (Foto)</label>
+            <input type="file" id="rgFoto" accept="image/*">
+          </div>
+          <div>
+            <label>Foto de Perfil</label>
+            <input type="file" id="fotoAluno" accept="image/*">
+          </div>
+        </div>
+      </div>
+
+      <!-- Aba Endereço -->
+      <div class="tab-content" id="endereco">
+        <div class="form-grid">
+          <div>
+            <label>CEP</label>
+            <input type="text" id="cep" placeholder="00000-000">
+          </div>
+          <div>
+            <label>Rua</label>
+            <input type="text" id="rua">
+          </div>
+          <div>
+            <label>Número</label>
+            <input type="text" id="numero">
+          </div>
+          <div>
+            <label>Bairro</label>
+            <input type="text" id="bairro">
+          </div>
+          <div>
+            <label>Cidade</label>
+            <input type="text" id="cidade">
+          </div>
+          <div>
+            <label>Estado</label>
+            <input type="text" id="estado">
+          </div>
+        </div>
+      </div>
+
+      <!-- Aba Acesso -->
+      <div class="tab-content" id="acesso">
+        <div class="form-grid">
+          <div>
+            <label>Senha do Portal</label>
+            <input type="password" id="senhaAluno" required>
+          </div>
+          <div>
+            <label>Confirmar Senha</label>
+            <input type="password" id="confirmaSenha" required>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-actions">
+        <button type="submit" class="btn">Salvar Cadastro</button>
+      </div>
+    </form>
+  </section>
+</main>
+
+<script src="alunos.js"></script>

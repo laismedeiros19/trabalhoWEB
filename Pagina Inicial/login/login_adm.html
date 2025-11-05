@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | Administrador - Saber+</title>
+  <link rel="stylesheet" href="login_adm.css">
+</head>
+<body>
+  <header>
+    <a href="paginicial.html" class="logo">Saber<span>+</span></a>
+  </header>
+
+  <main>
+    <section class="login-box">
+      <h1>Portal do Administrador</h1>
+      <p class="subtitle">Acesse com o e-mail cadastrado da escola</p>
+
+      <form id="loginAdminForm">
+        <label for="emailAdmin">E-mail</label>
+        <input type="email" id="emailAdmin" placeholder="exemplo@escola.com" required>
+
+        <label for="senhaAdmin">Senha</label>
+        <input type="password" id="senhaAdmin" placeholder="••••••••" required>
+
+        <button type="submit" class="btn">Entrar</button>
+
+        <p class="form-link">
+          <a href="paginicial.html">Voltar para página inicial</a>
+        </p>
+      </form>
+
+      <div id="loginMsg" class="msg"></div>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 Saber+ - Sistema de Gestão Escolar
+  </footer>
+
+  <script src="login-admin.js"></script>
+</body>
+</html>

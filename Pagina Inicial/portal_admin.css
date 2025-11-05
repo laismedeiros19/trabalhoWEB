@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  background-color: #f5f7ff;
+  min-height: 100vh;
+}
+
+/* MENU LATERAL */
+.sidebar {
+  width: 240px;
+  background: #2563eb;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 20px;
+}
+
+.logo {
+  font-size: 1.7rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.logo span {
+  color: #fff;
+}
+
+.sidebar ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.sidebar a {
+  color: #ffffffcc;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 10px;
+  border-radius: 6px;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover,
+.sidebar .active a {
+  background: #1e4ed8;
+  color: #fff;
+}
+
+/* CONTEÚDO PRINCIPAL */
+.main {
+  flex: 1;
+  padding: 30px 50px;
+}
+
+/* TOPO */
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.topbar h1 {
+  color: #1e3a8a;
+  font-size: 1.8rem;
+}
+
+.topbar p {
+  color: #666;
+}
+
+.perfil {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.perfil img {
+  width: 45px;
+  border-radius: 50%;
+  border: 2px solid #2563eb;
+}
+
+/* CARDS */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-bottom: 40px;
+}
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+.card h3 {
+  color: #2563eb;
+}
+.card p {
+  font-size: 1.1rem;
+  margin-top: 10px;
+}
+
+/* GRÁFICOS */
+.graficos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+.grafico-container {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* HISTÓRICO */
+.historico h2 {
+  color: #1e3a8a;
+  margin-bottom: 15px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+}
+thead {
+  background: #2563eb;
+  color: white;
+}
+th, td {
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+tbody tr:hover {
+  background: #f3f7ff;
+}

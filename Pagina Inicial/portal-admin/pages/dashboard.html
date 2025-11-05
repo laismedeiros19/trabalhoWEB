@@ -1,0 +1,71 @@
+<section class="dashboard-section">
+
+  <h1>Bem-vindo, Administrador 👋</h1>
+  <p>Último acesso: 03/11/2025 às 09:12</p>
+
+  <div class="cards-container">
+    <div class="card">
+      <h2>Alunos</h2>
+      <p id="qtdAlunos">312 cadastrados</p>
+    </div>
+
+    <div class="card">
+      <h2>Professores</h2>
+      <p id="qtdProfessores">15 cadastrados</p>
+    </div>
+
+    <div class="card">
+      <h2>Turmas</h2>
+      <p id="qtdTurmas">8 ativas</p>
+    </div>
+
+    <div class="card">
+      <h2>Presença Média</h2>
+      <p id="mediaPresenca">96%</p>
+    </div>
+  </div>
+
+  <div class="charts-container">
+    <div class="chart-box">
+      <h3>Desempenho Geral dos Alunos</h3>
+      <canvas id="graficoDesempenho"></canvas>
+    </div>
+
+    <div class="chart-box">
+      <h3>Acessos Recentes ao Sistema</h3>
+      <canvas id="graficoAcessos"></canvas>
+    </div>
+  </div>
+
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+  // Dados falsos por enquanto (virão do backend depois)
+  const desempenhoData = [7, 8, 8.2, 7.5, 8, 7.9];
+  const acessosData = [35, 45, 40, 50, 55, 60];
+
+  new Chart(document.getElementById('graficoDesempenho'), {
+    type: 'bar',
+    data: {
+      labels: ['1º Bim', '2º Bim', '3º Bim', '4º Bim', '5º Bim', '6º Bim'],
+      datasets: [{
+        label: 'Média de notas',
+        data: desempenhoData
+      }]
+    }
+  });
+
+  new Chart(document.getElementById('graficoAcessos'), {
+    type: 'line',
+    data: {
+      labels: ['Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sáb'],
+      datasets: [{
+        label: 'Acessos',
+        data: acessosData,
+        fill: true
+      }]
+    }
+  });
+</script>
