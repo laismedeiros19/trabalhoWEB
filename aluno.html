@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portal do Aluno | EduGestor</title>
+  <link rel="stylesheet" href="/public/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="aluno-container">
+    <div class="aluno-header">
+      <div class="aluno-avatar" id="aluno-avatar">
+        <i class="fas fa-user"></i>
+      </div>
+      <div class="aluno-info">
+        <h2 id="aluno-nome">Carregando...</h2>
+        <p><i class="fas fa-id-card"></i> RA: <span id="aluno-ra">-</span></p>
+      </div>
+      <div style="margin-left: auto;">
+        <a href="index.html" class="btn btn-secondary">
+          <i class="fas fa-sign-out-alt"></i> Sair
+        </a>
+      </div>
+    </div>
+
+    <div class="cards-grid">
+      <div class="card">
+        <div class="card-icon success">
+          <i class="fas fa-chart-pie"></i>
+        </div>
+        <div class="card-title">Média Geral</div>
+        <div class="card-value" id="media-geral-aluno">0.0</div>
+      </div>
+      <div class="card">
+        <div class="card-icon primary">
+          <i class="fas fa-book"></i>
+        </div>
+        <div class="card-title">Disciplinas</div>
+        <div class="card-value" id="total-disciplinas">0</div>
+      </div>
+      <div class="card">
+        <div class="card-icon success">
+          <i class="fas fa-check-circle"></i>
+        </div>
+        <div class="card-title">Frequência</div>
+        <div class="card-value" id="frequencia">85%</div>
+      </div>
+    </div>
+
+    <div class="chart-container">
+      <h3><i class="fas fa-chart-radar"></i> Desempenho por Disciplina</h3>
+      <canvas id="desempenhoChart"></canvas>
+    </div>
+
+    <div class="table-container">
+      <h3 style="margin-bottom: 1.5rem;"><i class="fas fa-list"></i> Notas e Avaliações</h3>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Disciplina</th>
+            <th>Nota</th>
+            <th>Média</th>
+            <th>Situação</th>
+          </tr>
+        </thead>
+        <tbody id="notas-aluno-body">
+          <tr>
+            <td colspan="4" class="text-center">Carregando...</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="chart-container">
+      <h3><i class="fas fa-chart-bar"></i> Frequência Escolar</h3>
+      <div class="progress-bar">
+        <div class="progress-fill" id="progress-fill" style="width: 85%">85%</div>
+      </div>
+      <p style="margin-top: 1rem; color: var(--secondary);">
+        <i class="fas fa-info-circle"></i> Frequência baseada em presenças registradas
+      </p>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="/public/aluno.js"></script>
+</body>
+</html>
+
